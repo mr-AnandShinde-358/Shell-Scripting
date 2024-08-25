@@ -190,3 +190,21 @@ read -p "Your name" NAME # you can direct provide message using this not need ec
 3] press dd (two time d press)
 4] you can see this line was deleted
 </details>
+
+## Arithmetic Operations
+
+<details>
+<summary> HOW TO USE EXPRESSIONS </summary>
+
+```
+#using let command
+
+let a++
+let a=5*10
+
+((a++))
+((a=5*10))
+
+```
+
+</details>
