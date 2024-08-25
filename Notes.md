@@ -168,3 +168,25 @@ slice=${myVar:6:11}
 ```
 
 </details>
+
+## User Interaction
+
+<details>
+<summary> TAKING INPUT FROM USER </summary>
+
+```
+read <var_name>
+read -p "Your name" NAME # you can direct provide message using this not need echo
+
+```
+
+
+</details>
+
+<details>
+<summary> When you want delete line on vim  </summary>
+1] press Esc
+2]go to your cursor you want delele line first character of this line
+3] press dd (two time d press)
+4] you can see this line was deleted
+</details>
