@@ -105,3 +105,47 @@ readonly var_name="Hi"
 ```
 
 </details>
+
+<details>
+<summary> ARRAYS </summary>
+
+```
+#How to define an array? # space separated value provide to array
+
+myArray=(1 2 Hello "Hey man")
+
+# How to get values from an array?
+
+echo "${myArray[0]}"
+echo "${myArray[1]}"
+
+```
+
+</details>
+
+<details>
+<summary> How to get length of array? </summary>
+
+```
+echo "${#myArray[*]}"
+
+# How to get specific values?
+
+echo "${myArray[*]:1}"
+echo "${myArray[*]:1:2}"
+
+```
+</details>
+
+<details>
+<summary> How to update an array? </summary>
+myArray +=( 5 6 8 )
+</details>
+
+<details>
+<summary> Arrays key-values </summary>
+declare -A myArray
+myArray=( [name]=Paul [age]=20)
+echo "${myArray[name]}"
+
+</details>
