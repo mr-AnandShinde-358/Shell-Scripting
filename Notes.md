@@ -149,3 +149,22 @@ myArray=( [name]=Paul [age]=20)
 echo "${myArray[name]}"
 
 </details>
+
+## String Operations
+
+<details>
+<summary> String Operations </summary>
+
+```
+myVar = "Hello World!"
+length=${#myVar}
+upper=${X^^}
+lower=${y,,}
+replace=${myVar/world/Buddy}
+slice=${myVar:6:11}
+
+#when you use sclling first variable:where is start sliceing: how many characters after starting
+
+```
+
+</details>
