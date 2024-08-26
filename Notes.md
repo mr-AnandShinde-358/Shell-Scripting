@@ -208,3 +208,97 @@ let a=5*10
 ```
 
 </details>
+
+## Conditional Statement
+
+<details>
+<summary> IF-ELSE </summary>
+
+
+```
+if[$marks -gt 40]
+then
+    echo "You are PASS"
+else
+    echo "You are FAIL"
+fi
+
+```
+
+</details>
+
+<details>
+<summary> OPERATORS </summary>
+
+<table>
+  <tr>
+    <th>OperatorName</th>
+    <th>Symbol</th>
+  </tr>
+  <tr>
+    <td>Equal</td>
+    <td>-eq/==</td>
+  </tr>
+  <tr>
+    <td>Greaterthanorequalto</td>
+    <td>-ge</td>
+  </tr>
+  <tr>
+    <td>Lessthanorequalto</td>
+    <td>-le</td>
+  </tr>
+  <tr>
+    <td>Not Equal</td>
+    <td>-ne/!=</td>
+  </tr>
+  <tr>
+    <td>Greater Than</td>
+    <td>-gt</td>
+  </tr>
+  <tr>
+    <td>Less Than</td>
+    <td>-lt</td>
+  </tr>
+</table>
+
+</details>
+
+
+<details>
+<summary> ELIF </summary>
+
+
+```
+if [ $marks -ge 80 ]
+then 
+     
+     echo "First Division"
+elif[ $marks -ge 60 ]
+then 
+    echo "Second Division"
+else 
+    echo "Fail"
+fi
+```
+
+
+</details>
+
+<details>
+<summary> CASE </summary>
+```
+echo "Hey choose an option"
+echo "a = To see the current date"
+echo "b = list all the files in current dir"
+
+read choice
+
+case $choice in
+    a) date;;
+    b) ls;;
+    *) echo "Non a valid input"
+esac
+
+```
+
+</details>
