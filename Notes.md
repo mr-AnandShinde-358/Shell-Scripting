@@ -284,8 +284,10 @@ fi
 
 </details>
 
+
 <details>
 <summary> CASE </summary>
+
 ```
 echo "Hey choose an option"
 echo "a = To see the current date"
@@ -300,5 +302,39 @@ case $choice in
 esac
 
 ```
+
+</details>
+
+
+## Logical Operators &&,||,!
+
+<details>
+<summary> Logical Operators </summary>
+
+```
+condition1 && condition2
+if both conditions are true then true else false
+
+```
+
+
+```
+condition1 || condition2
+
+if any of the condition is true then true
+
+```
+
+
+```
+condition1 && condition2 || condition3
+
+Execute condition2 only when 1 is true else execute condtion3
+
+```
+
+
+### when you can comparision two string to each order use '==' for equal check not use 'eq' this for only numberical
+
 
 </details>
