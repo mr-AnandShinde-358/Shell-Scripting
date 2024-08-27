@@ -448,7 +448,51 @@ done < file_name.csv
 
 ```
 
-
 </details>
 
+
+<details>
+<summary> What are functions? </summary>
+1] Block of code which perform some task and run when it is called. <br>
+2] Can be reuse many times in our program which lessen our lines of code. <br>
+3] We can pass arguments to the method<br>
+</details>
+
+<details>
+<summary> How to make Fucntions? </summary>
+
+```shell
+function myfun {
+  echo "HI"
+}
+
+myFun(){
+  echo "Hello"
+}
+
+----------------------------
+To call the funcation
+
+myfun
+
+```
+
+</details> 
+
+<details>
+<summary> How to use arguments in functions? </summary>
+
+
+```shell
+addition() {
+  local num1=$1
+  local num2=$2
+  let sum = $num1+$num2
+echo "Sum of $num1 and $num2 is $sum"
+}
+-------------
+myfun 12 13
+```
+
+</details>
 
