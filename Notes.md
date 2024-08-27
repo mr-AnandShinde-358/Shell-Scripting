@@ -487,7 +487,7 @@ myfun
 addition() {
   local num1=$1
   local num2=$2
-  let sum = $num1+$num2
+  let sum=$num1+$num2
 echo "Sum of $num1 and $num2 is $sum"
 }
 -------------
@@ -496,3 +496,41 @@ myfun 12 13
 
 </details>
 
+## Arguments Passing 
+
+<details>
+<summary> Arguments in Script </summary>
+
+#myscript.sh arg1 arg2 <br>
+
+How to access these arguments inside our script? <br>
+
+To get no. of arguments: $#<br>
+To display all arguments :@ <br>
+To use or display a argument: $1 $2.. <br>
+
+### for loop in argument
+
+
+```shell
+for arg in $@
+do
+    echo "Argument is $arg"
+done
+
+
+# you can allso pass wild card in argument during runtime
+```
+
+</details>
+
+<details>
+<summary> Shifting arguments </summary>
+SHIFT
+
+When we pass multiple arguments, we can shift.
+
+A B C
+shift
+B C
+</details>
