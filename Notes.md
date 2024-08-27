@@ -534,3 +534,20 @@ A B C
 shift
 B C
 </details>
+
+## Others Useful Concepts
+
+<details>
+<summary> Useful concepts </summary>
+
+break - to stop loop 
+
+continue - to stop current iteration of loop and start next iteration
+
+sleep - to create delay between two executions ex: sleep 1s/1m
+exit - to stop script at a point 
+
+exit status $? - gives you status of previous command if that was successful
+</details>
+
+
