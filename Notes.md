@@ -540,14 +540,27 @@ B C
 <details>
 <summary> Useful concepts </summary>
 
-break - to stop loop 
+### break - to stop loop 
 
-continue - to stop current iteration of loop and start next iteration
+### continue - to stop current iteration of loop and start next iteration
 
-sleep - to create delay between two executions ex: sleep 1s/1m
-exit - to stop script at a point 
+### sleep - to create delay between two executions ex: sleep 1s/1m
+### exit - to stop script at a point 
 
-exit status $? - gives you status of previous command if that was successful
+### exit status $? - gives you status of previous command if that was successful
+
+### basename - strip directory info and only give filename
+### dirname - strip the filename and gives directory path
+### realpath - gives you full path for a file
 </details>
 
+
+<details>
+<summary> Check IF FILE / DIR EXIST </summary>
+
+if [-d folder_name ] If folder exists
+[ ! -d folder_name ] If folder not exists
+if [ -f file_name ] if file exists
+if [ ! -f file_name ] if file not exists
+</details>
 
