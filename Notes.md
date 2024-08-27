@@ -559,8 +559,16 @@ B C
 <summary> Check IF FILE / DIR EXIST </summary>
 
 if [-d folder_name ] If folder exists
-[ ! -d folder_name ] If folder not exists
+if [ !-d folder_name ] If folder not exists
 if [ -f file_name ] if file exists
 if [ ! -f file_name ] if file not exists
 </details>
 
+<details>
+<summary> Bash Variables : predefined variables </summary>
+
+RANDOM - A random integer between 0 and 32767 is generated
+
+UID - User ID of the user logged in
+
+</details>
