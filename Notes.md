@@ -20,7 +20,7 @@ A shell provide on environment to a user to execute commands and interact with k
 <summary> What is my shell type? </summary>
 you can check using 
 
-```
+```shell
 echo $0
 
 ```
@@ -37,7 +37,7 @@ echo $0
 <details>
 <summary> First Basic Script </summary>
 
-```
+```shell
 #!/bin/bash
 echo "hellow world!"
 
@@ -54,7 +54,7 @@ echo "hellow world!"
 <details>
 <summary> Sending output to terminal </summary>
 
-```
+```shell
 echo "Hellow world!"
 
 ```
@@ -99,7 +99,7 @@ echo $VAR_NAME
 Once you defined a variable and don't wanna change it until end of the script.
 
 
-```
+```shell
 readonly var_name="Hi"
 
 ```
@@ -109,7 +109,7 @@ readonly var_name="Hi"
 <details>
 <summary> ARRAYS </summary>
 
-```
+```shell
 #How to define an array? # space separated value provide to array
 
 myArray=(1 2 Hello "Hey man")
@@ -126,7 +126,7 @@ echo "${myArray[1]}"
 <details>
 <summary> How to get length of array? </summary>
 
-```
+```shell
 echo "${#myArray[*]}"
 
 # How to get specific values?
@@ -155,7 +155,7 @@ echo "${myArray[name]}"
 <details>
 <summary> String Operations </summary>
 
-```
+```shell
 myVar = "Hello World!"
 length=${#myVar}
 upper=${X^^}
@@ -174,7 +174,7 @@ slice=${myVar:6:11}
 <details>
 <summary> TAKING INPUT FROM USER </summary>
 
-```
+```shell
 read <var_name>
 read -p "Your name" NAME # you can direct provide message using this not need echo
 
@@ -196,7 +196,7 @@ read -p "Your name" NAME # you can direct provide message using this not need ec
 <details>
 <summary> HOW TO USE EXPRESSIONS </summary>
 
-```
+```shell
 #using let command
 
 let a++
@@ -215,7 +215,7 @@ let a=5*10
 <summary> IF-ELSE </summary>
 
 
-```
+```shell
 if[$marks -gt 40]
 then
     echo "You are PASS"
@@ -268,7 +268,7 @@ fi
 <summary> ELIF </summary>
 
 
-```
+```shell
 if [ $marks -ge 80 ]
 then 
      
@@ -288,7 +288,7 @@ fi
 <details>
 <summary> CASE </summary>
 
-```
+```shell
 echo "Hey choose an option"
 echo "a = To see the current date"
 echo "b = list all the files in current dir"
@@ -311,14 +311,14 @@ esac
 <details>
 <summary> Logical Operators </summary>
 
-```
+```shell
 condition1 && condition2
 if both conditions are true then true else false
 
 ```
 
 
-```
+```shell
 condition1 || condition2
 
 if any of the condition is true then true
@@ -326,10 +326,10 @@ if any of the condition is true then true
 ```
 
 
-```
+```shell
 condition1 && condition2 || condition3
 
-Execute condition2 only when 1 is true else execute condtion3
+Execute condition2 only when condition1 is true else execute condtion3
 
 ```
 
@@ -338,3 +338,117 @@ Execute condition2 only when 1 is true else execute condtion3
 
 
 </details>
+
+## Loops
+
+<details>
+<summary> For Loop </summary>
+
+```shell
+for i in 1 2 3 4 5
+do 
+      each "Number is $i"
+done
+
+# Other ways to write for loop
+
+for j in Raju Sham Baburao
+
+for p in {1..20}
+
+```
+</details>
+
+<details>
+<summary> Iterate Value From File </summary>
+
+```shell
+items ="/home/paul/file.txt"
+
+for item in $(cat $items)
+do 
+echo $item
+done
+```
+
+</details>
+
+<details>
+<summary> While Loop </summary>
+
+```shell
+count = 0
+num = 10
+while [ $count -le $num ]
+do  
+      echo "Number are $count"
+      let count++
+done
+
+```
+
+</details>
+
+<details>
+<summary> Until Loop </summary>
+
+```shell
+# until : jab tak ye condition false rahegi ya jab tak true nahi ho jati tab tak loop chalata rahega
+a=10
+until [ $a -eq 1 ]
+do 
+  echo $a
+  a=`expr $a -1'
+done
+
+```
+
+</details>
+
+<details>
+<summary> Infinite Loop </summary>
+
+
+```shell
+while true
+do 
+    echo "Hi"
+    sleep 2s
+done
+
+```
+
+</details>
+
+<details>
+<summary> While Loop </summary>
+
+### To read content from a file
+
+```shell
+
+while read myVar
+do 
+      echo $myVar
+done < file_name
+
+```
+
+### To read content from a csv file
+
+
+```shell
+
+while IFS="," read f1 f2 f3
+do
+    echo $f1
+    echo $f2
+    echo $f3
+done < file_name.csv
+
+```
+
+
+</details>
+
+
