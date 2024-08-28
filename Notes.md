@@ -572,3 +572,91 @@ RANDOM - A random integer between 0 and 32767 is generated
 UID - User ID of the user logged in
 
 </details>
+
+
+### Redirection in scripts > >>
+
+<details>
+<summary>  Redirection in script </summary>
+commnad > <filename> : when redireact output in particular file you want orverite it each time to new out put
+commnad >> <filename> : when redireact output in particular file you want orverite it each time to new out put
+
+
+</details>
+
+<details>
+<summary> What is /DEV/NULL </summary>
+In case if you don't wanna print the output of a command on terminal or write in a file,
+we can redirect the oputput to /dev/null
+Example:
+#cd /root &> /dev/null
+
+</details>
+
+<details>
+<summary> Print Name of the script </summary>
+
+```shell
+
+echo "The name of the script is : ${0}'
+```
+
+</details>
+
+<details>
+<summary> Log Messages </summary>
+if you want to maintain the logging for your script, you can use logger in your script.
+
+you can find the logs under
+/var/logs/messages
+
+Examples: #logger "Hey Buddy"
+</details>
+
+<details>
+<summary> Debugging Scripts </summary>
+if we can enable debugging of the script using below in the script
+<br>
+set -x<br>
+
+if we want to exit our script when a command fail<br>
+set -e
+</details>
+
+<details>
+<summary> Running Script in backgound </summary>
+
+</details>
+
+## Automate our script
+
+<details>
+<summary> At or Crontab </summary>
+
+### for scheduling only one time, use AT
+
+at 12.09 PM
+<Your_command>
+Ctrl+D
+
+atq to check scheduled job <br>
+atrm <id> to remove the schedule <br>
+
+### Automate your script using crontab
+
+To chech the existing jobs -crontab -l
+
+To add new job - crontab -e
+
+***** cd /home/pual/scripts && ./create.file.sh
+
+mean of 5 starts
+first *: minute(0-59)
+second **: hour(0-23)
+third ***:day of months(1-31)
+forth ****: month(1-12)
+fifth *****: day of week(0-6) (sunday =0)
+</details>
+
+
+

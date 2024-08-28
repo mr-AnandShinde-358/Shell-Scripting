@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 #to access the arguments
 
 #exit : usege of exits keyword on script 

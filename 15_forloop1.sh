@@ -3,6 +3,7 @@
 for i in 1 2 3 4 5 6 7 8 9 10 21
 do	
 	echo "Number is $i"
+	sleep 3s
 done
 
 for name in Raju sham Baburao
