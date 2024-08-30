@@ -693,3 +693,30 @@ compress those files and move in a archive folder.
 6] Make a cron job to run the script every day at given time{wq
 
 </details>
+
+<details>
+<summary> project4: User Management </summary>
+
+### Requirement
+
+1] Script should beexecuted with root user else exit with status 1 and error message. <br>
+2] Script will take 1st argument as user and reset will be treated as comment. <br>
+3] Auto generate password for the user <br>
+4] Upon successful execution of script, display the following  <br>
+  a] username : <username> <br>
+  b] password : <auto_generated_password> <br>
+  c] host:<hostname> <br>
+
+### Steps:
+1] check if the script is being executed with superuser privileges. <br>
+2] if the user doesn't supply at least one argument, then give them help. <br>
+3] the first parameter is the user name.<br>
+4] The reset of the parameters are for the comments. <br>
+5] Generate a password. <br>
+6] Create the user with the password. <br>
+7] Check to see if the useradd command succeded.<br>
+8] Set the password <br>
+9] Check to see if the passwd command succeded.<br>
+10] Force password change on first login <br>
+11] Display the username, password and the host where the user is created.<br> 
+</details>
