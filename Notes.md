@@ -659,4 +659,37 @@ fifth *****: day of week(0-6) (sunday =0)
 </details>
 
 
+## Projects
 
+<details>
+<summary> Project1: Monitoring free RAM space </summary>
+
+</details>
+
+<details>
+<summary> project2: Monitoring Free Disk Space and Send Email Alert </summary>
+
+</details>
+
+<details>
+<summary> project3: Archive Older Logs | Archive Large Files </summary>
+
+### project Requirement 
+
+In the given directory, if you find files more than a given size ex:
+20MB or files older than given days ex:10days
+
+compress those files and move in a archive folder.
+
+### why are we making this script? Purpose of this script?
+
+### Steps of script:
+
+1] Provide the path of directory 
+2] Check if the directory is present or not 
+3] Create 'archive' folder if not already present
+4] Compress each file 
+5] Move the compressed files in 'archive' folder
+6] Make a cron job to run the script every day at given time{wq
+
+</details>
